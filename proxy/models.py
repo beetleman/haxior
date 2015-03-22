@@ -18,3 +18,7 @@ class Dane(models.Model):
         default=POST
     )
     data = models.TextField('Tresc zapytania')
+
+    class Meta:
+        verbose_name = 'Skradzione dane'
+        verbose_name_plural = 'Skradzione dane'
