@@ -84,4 +84,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 PROXY_DOMAIN = '149.156.25.2'
-HAXIOR_DOMAIN = 'moodle.zarobaczony.pl'
+HAXIOR_DOMAIN = '128.199.53.79:4000'
