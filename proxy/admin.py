@@ -7,4 +7,4 @@ from models import Dane
 class DaneAdmin(admin.ModelAdmin):
     pass
 
-admin.site.register(Dane, AuthorAdmin)
+admin.site.register(Dane, DaneAdmin)
