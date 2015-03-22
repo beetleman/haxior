@@ -22,3 +22,6 @@ class Dane(models.Model):
     class Meta:
         verbose_name = 'Skradzione dane'
         verbose_name_plural = 'Skradzione dane'
+
+    def __unicode__(self):
+        return self.url
