@@ -5,6 +5,8 @@ from models import Dane
 
 
 class DaneAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('url', 'type')
+    list_filter = ('type', )
+    search_fields = ('data', )
 
 admin.site.register(Dane, DaneAdmin)
